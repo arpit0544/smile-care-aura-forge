@@ -1,6 +1,7 @@
 
 import React from 'react';
 import AnimatedCounter from '../ui/AnimatedCounter';
+import YouTubeEmbed from '../ui/YouTubeEmbed';
 
 const About: React.FC = () => {
   const stats = [
@@ -68,6 +69,17 @@ const About: React.FC = () => {
               ))}
             </div>
           </div>
+        </div>
+        
+        {/* YouTube Video Section */}
+        <div className="mt-24">
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 font-heading">
+            Our Approach to <span className="gradient-text">Dental Care</span>
+          </h3>
+          <YouTubeEmbed 
+            videoId="RIhr32Ko-uY" 
+            title="Learn About Our Dental Care Services at Smile Care Dental Clinic"
+          />
         </div>
       </div>
     </section>
